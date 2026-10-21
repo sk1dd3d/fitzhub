@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>fitz's stuff | roblox scripts</title>
+<meta name="description" content="roblox scripts made by fitz. free, fast and updated." />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="mark">f</span> fitz's stuff</div>
+    <nav class="nav-links">
+      <a href="#scripts">scripts</a>
+      <a href="#games">games</a>
+      <a class="hide-sm" href="https://discord.gg/5pQCshrz6" target="_blank" rel="noopener">discord</a>
+      <a class="hide-sm" href="get-key.html">get key</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <div class="badge"><span class="dot"></span> online</div>
+    <h1>roblox scripts<br /><span class="grad">made by fitz.</span></h1>
+    <p class="lead">
+      a small collection of scripts i actually use. clean menu, no bloat,
+      every feature tested before it ships.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="get-key.html">get a key</a>
+      <a class="btn" href="#scripts">view scripts</a>
+    </div>
+  </div>
+
+  <section id="scripts">
+    <div class="card">
+      <div class="row">
+        <div>
+          <h2>fitz's hub</h2>
+          <p>one loader, picks the right features from the game you are in.</p>
+        </div>
+        <span class="tag">slap battles</span>
+      </div>
+      <div class="code" id="loader">loadstring(game:HttpGet("https://raw.githubusercontent.com/sk1dd3d/fitzhub/refs/heads/main/main.lua"))()</div>
+      <div class="actions" style="justify-content:flex-start; margin-top: 16px;">
+        <button class="btn primary" id="copyLoader" type="button">copy script</button>
+        <a class="btn ghost" href="get-key.html">get a key</a>
+      </div>
+      <p class="hint" id="loaderStatus">
+        paste this in your executor. a key is required, keys last 24 hours and only work on the device that made them.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid">
+      <div class="card">
+        <h3>what it does</h3>
+        <p>combat helpers, glove tools, teleports, progression automation, immunity modules and visual tweaks. everything toggles off cleanly.</p>
+      </div>
+      <div class="card">
+        <h3>kept updated</h3>
+        <p>the game patches, i patch back. the loader always pulls the newest version, so there is nothing to reinstall.</p>
+      </div>
+      <div class="card">
+        <h3>one key</h3>
+        <p>a single checkpoint gets you a key. keys are tied to your device and expire after 24 hours, then you grab a fresh one.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="games">
+    <div class="card">
+      <h3>supported games</h3>
+      <div style="margin-top: 10px;">
+        <div class="game"><span>Slap Battles</span><span>6403373529</span></div>
+        <div class="game"><span>Slap Battles &middot; killstreak only</span><span>11520107397</span></div>
+        <div class="game"><span>Slap Battles &middot; no oneshot gloves</span><span>9015014224</span></div>
+        <div class="game"><span>more games</span><span>soon</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+      <div class="row">
+        <div>
+          <h3>questions or broken feature?</h3>
+          <p>join the discord, that is where updates and fixes get posted.</p>
+        </div>
+        <a class="btn" href="https://discord.gg/5pQCshrz6" target="_blank" rel="noopener">join discord</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span>fitz's stuff &middot; scripts for roblox</span>
+    <span>not affiliated with roblox</span>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script>
+  Site.copyButton("copyLoader", "loader", "loaderStatus", "script copied");
+</script>
+</body>
+</html>

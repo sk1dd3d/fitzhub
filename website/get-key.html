@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>get a key | fitz's stuff</title>
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="mark">f</span> fitz's stuff</div>
+    <nav class="nav-links">
+      <a href="index.html">home</a>
+      <a class="hide-sm" href="https://discord.gg/5pQCshrz6" target="_blank" rel="noopener">discord</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="key-shell">
+
+    <div class="steps">
+      <div class="step-pill active" id="pill1">1 &middot; your device</div>
+      <div class="step-pill" id="pill2">2 &middot; checkpoint</div>
+      <div class="step-pill" id="pill3">3 &middot; your key</div>
+    </div>
+
+    <div class="card">
+      <h2>get a key</h2>
+      <p>keys are free, last 24 hours and only work on the device that made them.</p>
+
+      <div style="margin-top: 20px;">
+        <label class="field" for="device">device id</label>
+        <input type="text" id="device" spellcheck="false" autocomplete="off"
+               placeholder="XXXX-XXXX-XXXX" />
+        <p class="hint">
+          run the script once, the menu that pops up shows your device id. copy it and paste it above.
+        </p>
+      </div>
+
+      <div style="margin-top: 22px;">
+        <label class="field">checkpoint</label>
+        <div class="row">
+          <button class="btn" id="discordBtn" type="button">
+            <span id="discordLabel">join the discord</span>
+          </button>
+          <button class="btn" id="checkpointBtn" type="button" disabled>
+            open checkpoint
+          </button>
+        </div>
+        <p class="hint" id="checkpointHint">
+          enter your device id first, then finish the checkpoint and the discord step.
+        </p>
+      </div>
+
+      <div style="margin-top: 22px;">
+        <button class="btn primary" id="generateBtn" type="button" disabled style="width: 100%;">
+          generate my key
+        </button>
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="key-out" id="keyOut">
+        <div class="key-meta">your key</div>
+        <div class="key-value" id="keyValue"></div>
+        <div class="key-meta" id="keyMeta"></div>
+        <div class="actions" style="margin-top: 16px;">
+          <button class="btn primary" id="copyKey" type="button">copy key</button>
+          <a class="btn ghost" href="index.html">back to scripts</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 16px;">
+      <h3>how to use it</h3>
+      <p style="margin-bottom: 10px;">paste the key into the box the script shows, it saves itself and you will not need it again until it expires.</p>
+      <div class="code" id="loader2">loadstring(game:HttpGet("https://raw.githubusercontent.com/sk1dd3d/fitzhub/refs/heads/main/main.lua"))()</div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span>fitz's stuff &middot; scripts for roblox</span>
+    <span>not affiliated with roblox</span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/key.js"></script>
+<script src="assets/key-page.js"></script>
+</body>
+</html>
